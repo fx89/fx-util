@@ -1,0 +1,41 @@
+<project
+    xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+>
+    <properties>
+        <own-version>1.0.0-SNAPSHOT</own-version>
+		<aspectj-version>1.9.1</aspectj-version>
+    </properties>
+
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.desolatetimelines</groupId>
+    <artifactId>fx-utils</artifactId>
+    <version>${own-version}</version>
+
+	<packaging>pom</packaging>
+
+	<name>FX Utils</name>
+	<description>Utility classes, shortcuts and misc functionality</description>
+
+    <dependencyManagement>
+		<dependencies>
+            <dependency>
+                <groupId>org.aspectj</groupId>
+                <artifactId>aspectjtools</artifactId>
+                <version>${aspectj-version}</version>
+            </dependency>
+			<dependency>
+                <groupId>org.aspectj</groupId>
+                <artifactId>aspectjtools</artifactId>
+                <version>${aspectj-version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <modules>
+        <module>fx-utils-lang</module>
+		<module>fx-utils-aop</module>
+    </modules>
+
+</project>
