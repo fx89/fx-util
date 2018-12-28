@@ -5,7 +5,7 @@
 >
     <properties>
         <own-version>1.0.0-SNAPSHOT</own-version>
-		<aspectj-version>1.9.1</aspectj-version>
+        <aspectj-version>1.9.1</aspectj-version>
     </properties>
 
     <modelVersion>4.0.0</modelVersion>
@@ -13,19 +13,19 @@
     <artifactId>fx-utils</artifactId>
     <version>${own-version}</version>
 
-	<packaging>pom</packaging>
+    <packaging>pom</packaging>
 
-	<name>FX Utils</name>
-	<description>Utility classes, shortcuts and misc functionality</description>
+    <name>FX Utils</name>
+    <description>Utility classes, shortcuts and misc functionality</description>
 
     <dependencyManagement>
-		<dependencies>
+        <dependencies>
             <dependency>
                 <groupId>org.aspectj</groupId>
                 <artifactId>aspectjtools</artifactId>
                 <version>${aspectj-version}</version>
             </dependency>
-			<dependency>
+            <dependency>
                 <groupId>org.aspectj</groupId>
                 <artifactId>aspectjtools</artifactId>
                 <version>${aspectj-version}</version>
@@ -35,7 +35,7 @@
 
     <modules>
         <module>fx-utils-lang</module>
-		<module>fx-utils-aop</module>
+        <module>fx-utils-aop</module>
     </modules>
 
 </project>
